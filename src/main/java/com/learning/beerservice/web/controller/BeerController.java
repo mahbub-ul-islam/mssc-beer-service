@@ -20,9 +20,14 @@ public class BeerController {
     public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto) {
         return new ResponseEntity(HttpStatus.CREATED);
     }
-    
+
     @PutMapping("/{beerId}")
     public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto) {
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
+    }
+
+    @DeleteMapping("/{beerId}")
+    public ResponseEntity deleteBeerById(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto) {
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 }
