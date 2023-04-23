@@ -2,7 +2,6 @@ package com.learning.beerservice.bootstrap;
 
 import com.learning.beerservice.domain.Beer;
 import com.learning.beerservice.repositories.BeerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
