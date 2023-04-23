@@ -1,0 +1,14 @@
+com\learning\beerservice\web\controller\mvcExceptionHandler.class
+com\learning\beerservice\domain\Beer$BeerBuilder.class
+com\learning\beerservice\bootstrap\BeerLoader.class
+com\learning\beerservice\web\model\BeerPagedList.class
+com\learning\beerservice\MsscBeerServiceApplication.class
+com\learning\beerservice\web\controller\BeerController.class
+com\learning\beerservice\web\model\BeerDto$BeerDtoBuilder.class
+com\learning\beerservice\web\mappers\BeerMapper.class
+com\learning\beerservice\web\mappers\BeerMapperImpl.class
+com\learning\beerservice\web\mappers\DateMapper.class
+com\learning\beerservice\domain\Beer.class
+com\learning\beerservice\repositories\BeerRepository.class
+com\learning\beerservice\web\model\BeerDto.class
+com\learning\beerservice\web\model\BeerStyleEnum.class
