@@ -1,4 +1,4 @@
-package com.learning.beerservice.web.controller;
+package com.learning.beerservice.web.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

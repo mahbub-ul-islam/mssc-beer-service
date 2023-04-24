@@ -14,17 +14,18 @@ import java.util.UUID;
 @Service
 public class BeerServiceImpl implements BeerService {
 
-    private final BeerRepository repository;
-    private final BeerMapper mapper;
+    private BeerRepository repository;
+    private BeerMapper mapper;
+
 
     @Override
     public BeerDto getById(UUID beerId) {
-        return mapper.BeerToBeerDto(repository.findById(beerId).orElseThrow(NotFoundException::new));
+        return mapper.beerToBeerDto(repository.findById(beerId).orElseThrow(NotFoundException::new));
     }
 
     @Override
     public BeerDto saveNewBeer(BeerDto beerDto) {
-        return mapper.BeerToBeerDto(repository.save(mapper.BeerDtoToBeer(beerDto)));
+        return mapper.beerToBeerDto(repository.save(mapper.beerDtoToBeer(beerDto)));
     }
 
     @Override
@@ -36,6 +37,6 @@ public class BeerServiceImpl implements BeerService {
         beer.setPrice(beerDto.getPrice());
         beer.setUpc(beerDto.getUpc());
 
-        return mapper.BeerToBeerDto(repository.save(beer));
+        return mapper.beerToBeerDto(repository.save(beer));
     }
 }
