@@ -30,5 +30,5 @@ hs_err_pid*
 # target directory not required on repo.
 */target/
 */.settings/
-
+/target
 bin
