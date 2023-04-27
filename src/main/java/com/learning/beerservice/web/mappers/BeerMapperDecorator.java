@@ -24,12 +24,13 @@ public class BeerMapperDecorator implements BeerMapper {
 
     @Override
     public BeerDto beerToBeerDto(Beer beer) {
-//        System.out.println("beeer mapper decorator beer : " + beer);
+        return mapper.beerToBeerDto(beer);
+    }
+
+    @Override
+    public BeerDto beerToBeerDtoWithInventory(Beer beer) {
         BeerDto beerDto = mapper.beerToBeerDto(beer);
-//        System.out.println("beeer mapper decorator beerDto : " + beerDto);
         beerDto.setQuantityOnHand(beerInventoryService.getOnHandInventory(beer.getId()));
-//        System.out.println(beerDto);
-//        System.out.println("BeerMapperDecorator invoked");
         return beerDto;
     }
 
